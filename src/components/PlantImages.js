@@ -9,8 +9,9 @@ const PlantImages = () => {
         fetch('https://perenual.com/api/species-list?key=sk-1ZpB646a3c33a01e51007&indoor=1')
             .then(response => response.json())
             .then(data => {
-                const name = data.data[0].common_name;
-                const image = data.data[0].default_image;
+                const plants = data.data;
+                const randomIndex = Math.floor(Math.random()* plants.length);
+                const image = data.data[randomIndex].default_image;
                 const indoorPlant = image.regular_url;
                 setindoorPlant(indoorPlant);
             })
@@ -22,7 +23,9 @@ const PlantImages = () => {
         fetch('https://perenual.com/api/species-list?key=sk-1ZpB646a3c33a01e51007&edible=1')
             .then(response => response.json())
             .then(data => {
-                const image = data.data[0].default_image;
+                const plants = data.data;
+                const randomIndex = Math.floor(Math.random()* plants.length);
+                const image = data.data[randomIndex].default_image;
                 const ediblePlant = image.regular_url;
                 setEdiblePlant(ediblePlant);
             })
@@ -34,12 +37,15 @@ const PlantImages = () => {
     return (
         <>
             <div>
-                <button onClick={generateIndoorPlant}>Indoor Plants</button>
                 {indoorPlant && <img src={indoorPlant} alt="Random Plant" />}
+                <br/>
+                <button onClick={generateIndoorPlant}>Indoor Plants</button>
+                <br/>
             </div>
             <div>
-                <button onClick={generateEdiblePlant}>Edible Plants</button>
                 {ediblePlant && <img src={ediblePlant} alt="Random Plant" />}
+                <br/>
+                <button onClick={generateEdiblePlant}>Edible Plants</button>
             </div>
         </>
     );
