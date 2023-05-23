@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 
 const PlantImages = () => {
     const [indoorPlant, setindoorPlant] = useState('');
-    const [poisonPlant, setPoisonPlant] = useState('');
+    const [ediblePlant, setEdiblePlant] = useState('');
 
 
     const generateIndoorPlant = () => {
@@ -19,15 +19,20 @@ const PlantImages = () => {
                 console.error('Error:', error);
             });
     };
-    const generatePoisonPlant = () => {
-        fetch('https://perenual.com/api/species-list?key=sk-1ZpB646a3c33a01e51007&poisonous=1')
+    const generateEdiblePlant = () => {
+        fetch('https://perenual.com/api/species-list?key=sk-1ZpB646a3c33a01e51007&edible=1')
             .then(response => response.json())
             .then(data => {
+
                 const plants = data.data;
                 const randomIndex = Math.floor(Math.random()* plants.length);
                 const image = data.data[randomIndex].default_image;
                 const poisonPlant = image.regular_url;
                 setPoisonPlant(poisonPlant);
+                const image = data.data[0].default_image;
+                const ediblePlant = image.regular_url;
+                setEdiblePlant(ediblePlant);
+
             })
             .catch(error => {
                 console.error('Error:', error);
@@ -43,9 +48,10 @@ const PlantImages = () => {
                 <br/>
             </div>
             <div>
-                {poisonPlant && <img src={poisonPlant} alt="Random Plant" />}
-                <br/>
-                <button onClick={generatePoisonPlant}>Poisonous Plants</button>
+        <button onClick={generatePoisonPlant}>Poisonous Plants</button>
+
+                <button onClick={generateEdiblePlant}>Edible Plants</button>
+                {ediblePlant && <img src={ediblePlant} alt="Random Plant" />}
             </div>
         </>
     );
