@@ -28,6 +28,7 @@ const PlantImages = () => {
                 const image = data.data[randomIndex].default_image;
                 const ediblePlant = image.regular_url;
                 setEdiblePlant(ediblePlant);
+
             })
             .catch(error => {
                 console.error('Error:', error);
