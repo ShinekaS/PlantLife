@@ -46,13 +46,31 @@ img {
   height: 200px;
   width: 200px;
 }
-/* .cardbody {
+.cardbody {
   display:grid;
-  grid-template-columns: 25px 25px;
-  align-items: center;
+  grid-template-columns: 100px 100px;
+  align-items: left;
 
-} */
+}
 
 .PlantCard {
   display: flex;
+  flex-wrap: wrap;
+  justify-content:space-evenly;
 }
+  
+.plantCardItem {
+  width: calc(33.33% - 10px); /* Adjust as needed */
+  margin-bottom: 20px; /* Adjust as needed */
+  justify-content: center;
+}
+  
+/* .imgContainer {
+  margin-bottom: 10px;
+} */
+
+
+/* Nav bar */
+  ol, ul {
+    list-style: none;
+  }

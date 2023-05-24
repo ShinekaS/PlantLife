@@ -5,7 +5,7 @@ const IndoorPlants = () => {
   const [indoorPlantImages, setIndoorPlantImages] = useState([]);
 
   useEffect(() => {
-    fetch('https://perenual.com/api/species-list?key=sk-1ZpB646a3c33a01e51007&indoor=1')
+    fetch('https://perenual.com/api/species-list?key=sk-BCUO646e567031eb11041&indoor=1')
       .then(response => response.json())
       .then(data => {
         const plants = data.data;
@@ -23,13 +23,15 @@ const IndoorPlants = () => {
       <div className="PlantCard">
         {indoorPlants.map((plant, index) => (
           <div key={plant.id}>
-            <h3>{plant.common_name}</h3>
+            <h4>{plant.common_name}</h4>
+            <div className='imgContainer'>
             {indoorPlantImages[index] && <img src={indoorPlantImages[index]} alt={plant.common_name} />}
+            </div>
             <article className="cardbody">
-              <p>Botanical Name: {plant.scientific_name}</p>
-              <p>Cycle: {plant.cycle}</p>
-              <p>Watering: {plant.watering}</p>
-              <p>Sunlight: {plant.sunlight}</p>
+              <h6>Botanical Name: {plant.scientific_name}</h6>
+              <h6>Cycle: {plant.cycle}</h6>
+              <h6>Watering: {plant.watering}</h6>
+              <h6>Sunlight: {plant.sunlight}</h6>
             </article>
           </div>
         ))}

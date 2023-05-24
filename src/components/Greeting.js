@@ -13,7 +13,7 @@ const message =
         Love Plants, but don't know how to select the right one's for your home and garden?
         <br />
         <br />
-        This app will help you choose based on things such as lighting, level of care, indoor plants / outdoor plants, etc...
+        This app will help you choose based on things such as lighting, level of care, indoor plants / edible plants, etc...
     </h5>;
 
 
