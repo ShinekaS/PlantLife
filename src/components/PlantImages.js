@@ -26,7 +26,7 @@ const PlantImages = () => {
                 const plants = data.data;
                 const randomIndex = Math.floor(Math.random()* plants.length);
                 const image = data.data[randomIndex].default_image;
-                const ediblePlant = image.regular_url;
+                const ediblePlant = image.original_url;
                 setEdiblePlant(ediblePlant);
 
             })

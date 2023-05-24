@@ -46,3 +46,13 @@ img {
   height: 200px;
   width: 200px;
 }
+/* .cardbody {
+  display:grid;
+  grid-template-columns: 25px 25px;
+  align-items: center;
+
+} */
+
+.PlantCard {
+  display: flex;
+}
