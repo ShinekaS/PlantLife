@@ -1,12 +1,11 @@
-import React, { useState } from 'react';
+// import React, { useState } from 'react';
 import './App.css';
 import EdiblePlant from './components/EdiblePlant';
 import IndoorPlants from './components/IndoorPlants';
 import Greeting from './components/Greeting';
-import PlantImages from './components/PlantImages';
+// import PlantImages from './components/PlantImages';
 import PlantIndex from './components/PlantIndex';
 import { Routes, Route, Link} from 'react-router-dom';
-import img from './images/edibleplant.jpeg'
 
 
 
