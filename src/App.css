@@ -13,7 +13,7 @@
   }
 }
 
-.App-header {
+/* .App-header {
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
@@ -22,7 +22,7 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
-}
+} */
 
 .App-link {
   color: #61dafb;
@@ -41,11 +41,11 @@
   }
 }
 
-
-img {
+/* these images a no longer being used right now */
+/* img {
   height: 200px;
   width: 200px;
-}
+} */
 .cardbody {
   display:grid;
   grid-template-columns: 100px 100px;
@@ -60,8 +60,8 @@ img {
 }
   
 .plantCardItem {
-  width: calc(33.33% - 10px); /* Adjust as needed */
-  margin-bottom: 20px; /* Adjust as needed */
+  width: calc(33.33% - 10px); 
+  margin-bottom: 20px; 
   justify-content: center;
 }
   
@@ -74,3 +74,11 @@ img {
   ol, ul {
     list-style: none;
   }
+.submit {
+  color: aqua;
+  background-color: black;
+  justify-items: center;
+  position: absolute;
+  left: 90%;
+  transform: translateX(-50%);
+}
