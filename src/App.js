@@ -6,6 +6,7 @@ import Greeting from './components/Greeting';
 import PlantImages from './components/PlantImages';
 import PlantIndex from './components/PlantIndex';
 import { Routes, Route, Link} from 'react-router-dom';
+import img from './images/edibleplant.jpeg'
 
 
 
@@ -30,9 +31,12 @@ function App() {
         <h1>🍃Plant Life!🌿</h1>
         <Greeting />
         <PlantIndex />
+
+      
       <Link to='/indoorPlants'>Indoor Plant</Link>
       <br />
       <Link to='/ediblePlant'>Edible Plants</Link>
+
       <br />
         <Link to='/reset'>Clear Page</Link>
 

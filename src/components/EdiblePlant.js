@@ -22,7 +22,7 @@ const EdiblePlant = () => {
     <>
     <div className="PlantCard">
       {ediblePlants.map((plant, index) => (
-          <div key={plant.id}>
+          <div key={plant.id} className="cardInfo">
           <h4 className='comName' >{plant.common_name}</h4>
           <div className='imgContainer'>
           {ediblePlantImages[index] && <img src={ediblePlantImages[index]} alt={plant.common_name} />}
