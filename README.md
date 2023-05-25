@@ -15,7 +15,9 @@ http://localhost:3000/ediblePlant
         <Route path='/ediblePlant' element={<EdiblePlant />} />
         <Route path='/reset' element={<ResetPage />} />
 
-
+API
+PLANT API
+https://perenual.com/user/developer
 
 # Getting Started with Create React App
 
