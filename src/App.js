@@ -11,8 +11,6 @@ import { Routes, Route, Link} from 'react-router-dom';
 
 function ResetPage() {
   // adds a link to reset the page, rather than a Home page link
-
-
   return null;
 }
 
@@ -37,21 +35,18 @@ function App() {
       <Link to='/ediblePlant'>Edible Plants</Link>
       <br />
         <Link to='/reset'>Clear Page</Link>
-      {/* <IndoorPlants /> */}
+
         {/* <PlantImages /> */}
+
       </div>
 
       <Routes>
         <Route path='/indoorPlants' element={<IndoorPlants/>} />
         <Route path='/ediblePlant' element={<EdiblePlant />} />
         <Route path='/reset' element={<ResetPage />} />
-
       </Routes>
+     
       <hr />
-
-      <EdiblePlant />
-      <hr />
-
     </>
 
     

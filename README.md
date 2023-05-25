@@ -1,3 +1,22 @@
+<!-- README.md  Plant Life--> 
+
+https://plant-life.onrender.com/
+
+https://plant-life.onrender.com/indoorPlants
+
+https://plant-life.onrender.com/ediblePlant
+
+        Routes.
+http://localhost:3000/
+http://localhost:3000/indoorPlants
+http://localhost:3000/ediblePlant
+
+<Route path='/indoorPlants' element={<IndoorPlants/>} />
+        <Route path='/ediblePlant' element={<EdiblePlant />} />
+        <Route path='/reset' element={<ResetPage />} />
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -69,3 +88,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 # PlantLife
+
+
+
+

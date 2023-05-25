@@ -6,7 +6,7 @@ const PlantImages = () => {
 
 
     const generateIndoorPlant = () => {
-        fetch('https://perenual.com/api/species-list?key=sk-1ZpB646a3c33a01e51007&indoor=1')
+        fetch('https://perenual.com/api/species-list?key=sk-Q286646f60c4cf4c11050&indoor=1')
             .then(response => response.json())
             .then(data => {
                 const plants = data.data;
@@ -20,7 +20,7 @@ const PlantImages = () => {
             });
     };
     const generateEdiblePlant = () => {
-        fetch('https://perenual.com/api/species-list?key=sk-1ZpB646a3c33a01e51007&edible=1')
+        fetch('https://perenual.com/api/species-list?key=sk-Q286646f60c4cf4c11050&edible=1')
             .then(response => response.json())
             .then(data => {
                 const plants = data.data;

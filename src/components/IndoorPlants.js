@@ -5,7 +5,7 @@ const IndoorPlants = () => {
   const [indoorPlantImages, setIndoorPlantImages] = useState([]);
 
   useEffect(() => {
-    fetch('https://perenual.com/api/species-list?key=sk-BCUO646e567031eb11041&indoor=1')
+    fetch('https://perenual.com/api/species-list?key=sk-Q286646f60c4cf4c11050&indoor=1')
       .then(response => response.json())
       .then(data => {
         const plants = data.data;
