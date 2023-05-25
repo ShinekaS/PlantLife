@@ -46,11 +46,33 @@
   height: 200px;
   width: 200px;
 } */
-.cardbody {
+
+/* .cardbody {
   display:grid;
   grid-template-columns: 100px 100px;
-  align-items: left;
+} */
 
+.ptInfo1 {
+  display:grid;
+  grid-template-columns: 100px 100px;
+ 
+  
+}
+
+.ptInfo2 {
+  display: flex;
+ justify-content: center;
+ margin-bottom: 0;
+}
+
+.ptInfo3 {
+  display: flex;
+ justify-content: center;
+}
+
+.ptInfo4 {
+  display: flex;
+ justify-content: center;
 }
 
 .PlantCard {
@@ -84,7 +106,20 @@
 }
 
 img {
-  height: 200px;
-  width: 200px;
+  height: 190px;
+  width: 190px;
   border-radius: 70%;
+
+}
+
+.cardInfo {
+  display: flex;
+  flex-direction: column;
+background: rgba(135, 232, 234, 0.563);border-radius: 10%;
+margin-bottom: 20px;
+
+}
+.comName {
+ display: flex;
+ justify-content: center;
 }

@@ -23,15 +23,15 @@ const EdiblePlant = () => {
     <div className="PlantCard">
       {ediblePlants.map((plant, index) => (
           <div key={plant.id}>
-          <h4>{plant.common_name}</h4>
+          <h4 className='comName' >{plant.common_name}</h4>
           <div className='imgContainer'>
           {ediblePlantImages[index] && <img src={ediblePlantImages[index]} alt={plant.common_name} />}
           </div>
           <article className="cardbody">
-            <p>Botanical Name: {plant.scientific_name}</p>
-            <p>Cycle: {plant.cycle}</p>
-            <p>Watering: {plant.watering}</p>
-            <p>Sunlight: {plant.sunlight}</p>
+            <h6 className='ptInfo1'>Botanical Name: {plant.scientific_name}</h6>
+            <h6 className='ptInfo2'>Cycle: {plant.cycle}</h6>
+            <h6 className='ptInfo3'>Watering: {plant.watering}</h6>
+            <h6 className='ptInfo4'>Sunlight: {plant.sunlight}</h6>
           </article>
         </div>
       ))}

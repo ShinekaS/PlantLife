@@ -22,16 +22,16 @@ const IndoorPlants = () => {
     <>
       <div className="PlantCard">
         {indoorPlants.map((plant, index) => (
-          <div key={plant.id}>
-            <h4>{plant.common_name}</h4>
+          <div key={plant.id} className="cardInfo">
+            <h4 className='comName' >{plant.common_name}</h4>
             <div className='imgContainer'>
             {indoorPlantImages[index] && <img src={indoorPlantImages[index]} alt={plant.common_name} />}
             </div>
             <article className="cardbody">
-              <h6>Botanical Name: {plant.scientific_name}</h6>
-              <h6>Cycle: {plant.cycle}</h6>
-              <h6>Watering: {plant.watering}</h6>
-              <h6>Sunlight: {plant.sunlight}</h6>
+              <h6 className='ptInfo1'>Botanical Name: {plant.scientific_name}</h6>
+              <h6 className='ptInfo2'>Cycle: {plant.cycle}</h6>
+              <h6 className='ptInfo3'>Watering: {plant.watering}</h6>
+              <h6 className='ptInfo4'>Sunlight: {plant.sunlight}</h6>
             </article>
           </div>
         ))}
